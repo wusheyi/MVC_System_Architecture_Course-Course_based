@@ -1,0 +1,97 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #ffb6c1;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    color: #333;
+}
+
+#root {
+    width: 80%;
+    max-width: 960px;
+    padding: 20px;
+    background-color: #fecad2;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+button {
+    /* 基本樣式 */
+    background-color: #fdd; /* 貓咪粉色 */
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 20px; /* 圓角 */
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    position: relative;
+    overflow: hidden;
+    padding-left: 35px; /* 留出空間給圖標 */
+}
+
+button:hover {
+    /* 滑鼠懸停時的樣式 */
+    background-color: #fbb;
+    transform: scale(1.05);
+}
+
+button:after {
+    /* 貓爪圖案 (可以使用 Font Awesome 或其他圖標庫) */
+    content: '\f1b0'; /* Font Awesome 的貓爪圖標 */
+    font-family: FontAwesome;
+    position: absolute;
+    top: 50%;
+    left: 10px; /* 將圖標移到左側 */
+    transform: translateY(-50%);
+    font-size: 1em; /* 縮小圖標尺寸 */
+    color: #000000;
+    opacity: 0.8;
+}
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    background-color: #fee;
+    font-weight: bold;
+}
+
+tr:hover {
+    background-color: #fef;
+}
+
+input[type="text"] {
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: calc(100% - 20px);
+}
+
+#content {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    background-color: #fafafa;
+}
